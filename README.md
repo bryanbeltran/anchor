@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧭 Anchor
 
-## Getting Started
+**Anchor** is a minimalist browser homepage and PWA for ADHD brains.  
+It shows you one task and a countdown timer — nothing else.  
+Every time you open a new tab, you're reminded of what you're doing and how long you committed to focus.
 
-First, run the development server:
+---
+
+## 💡 Why?
+
+- ADHD brains struggle with time blindness, task-switching, and reorienting after distractions.
+- Anchor acts as a **cognitive anchor** — a ritualized point of return whenever your brain derails.
+- It's not an extension. It's a website. Set it as your homepage, or install it to your device.
+
+---
+
+## 🔧 Features
+
+- [x] One active task input  
+- [x] Optional “why am I doing this?” note  
+- [x] 25-minute countdown timer  
+- [x] Task lock during countdown  
+- [x] Timer based on real time (not intervals)  
+- [x] PWA: installable on iOS/macOS via Safari  
+- [x] LocalStorage persistence  
+
+---
+
+## 🛠 Stack
+
+- Next.js 15 (App Router)  
+- Tailwind CSS  
+- TypeScript  
+- shadcn/ui  
+- LocalStorage (no backend)  
+
+---
+
+## 🚀 Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
+Then open http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📱 Safari Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+macOS:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Safari → Preferences → General
+Set homepage and new tab to: https://anchor.yourdomain.com
+iOS:
 
-## Learn More
+Open the site in Safari
+Tap “Share” → Add to Home Screen
+Launch from Home Screen for full-screen mode
+🔐 Privacy
 
-To learn more about Next.js, take a look at the following resources:
+No accounts, no analytics, no data leaves your device.
+This is a tool for your brain, not a product.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+MIT — feel free to fork, remix, and share.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
